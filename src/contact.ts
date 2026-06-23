@@ -1,31 +1,31 @@
 const nameInput = document.getElementById("name") as HTMLInputElement;
 const nameError = document.getElementById("name-error") as HTMLInputElement;
 const submitButton = document.getElementById("submitBtn") as HTMLInputElement;
+const form = document.getElementById("contactForm") as HTMLFormElement;
+const firstName = document.getElementById("firstName") as HTMLInputElement;
+const lastName = document.getElementById("lastName") as HTMLInputElement;
+const email = document.getElementById("email") as HTMLInputElement;
+const message = document.getElementById("message") as HTMLTextAreaElement;
+
 const successMessage = document.getElementById("successMsg") as HTMLInputElement;
 
 
-submitButton.addEventListener("click", (event) => {
+submitButton.addEventListener("click", (e) => {
 
-    event.preventDefault();
-
-   const name = nameInput?.value;
-
-  if(name.trim() === "") {
-    nameError.textContent = "Name is required";
-    nameInput.classList.add("border-red-500, bg-red-50");
-    return;
-  }
+    e.preventDefault();
 
 
-  if(name.trim().length < 2) {
-     nameError.textContent = "Name must be at least 2 characters";
-     nameInput.classList.add("border-red-500, bg-red-50");
-     return;
+  if (firstName.value.trim().length < 2) return alert("First name too short");
+  if (lastName.value.trim().length < 2) return alert("Last name too short");
+  if (!email.value.includes("@")) return alert("Invalid email");
+  if (message.value.trim().length < 5) return alert("Message too short");
 
-  }
+  
 
+    form.reset();
+  successMessage.classList.remove("hidden");
 
-  successMessage.textContent = "Messge sent successfully"
+setTimeout(() =>successMessage.classList.add("hidden"),1000);
 })
 
 

@@ -2,17 +2,26 @@ import { products } from "./data/products";
 
 //Dom Layer
 const productBtn = document.getElementById("productBtn");
-const list = document.getElementById("productList");
+const list = document.getElementById("productList")!;
 
 
-
-//Render Layer 
-function renderProducts(products: string[]) {
-    list!.innerHTML = products.map(p => `<div>${p}</div>`).join("");
-}
-
-
-//Event Layer
 productBtn?.addEventListener("click", () => {
-    renderProducts(products);
+    list.innerHTML = products
+    .map(product => {
+     return   `
+     <div>
+        <div>
+        <img src="${product.image}" alt="${product.name}"w-full class="w-60 h-60 object-cover">
+        </div>
+
+        <div>
+        <h3 class=" text-2xl font-semibold mb-3">${product.name}</h3>
+        <p class="font-semibold text-2xl">$${product.price}</p>
+        </div>
+       
+        </div>
+        
+        `;
+})
+.join("");
 })

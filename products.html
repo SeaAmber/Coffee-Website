@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products Page</title>
+    <link rel="stylesheet" href="/src/index.css">
 </head>
 <body>
-    <h1>Show Products</h1>
-    <button id="productBtn">Show Products</button>
 
-    <div id="productList"></div>
+    <header>
+    <nav class="text-right text-2xl py-7 font-semibold bg-amber-500">
+        <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4">
+        <a href="index.html" class="px-12 hover:bg-red-600">Home</a>
+        <a href="products.html" class="px-12  hover:bg-red-600">Products</a>
+        <a href="about.html" class="px-12  hover:bg-red-600">About</a>
+        <a href="contact.html" class="px-12  hover:bg-red-600">Contact Us</a>
+    </nav>
+ </header>
 
- <script type="module" src="/src/products.ts"></script>
+    <h1 class="text-center font-semibold mt-5 text-3xl">Our Different Types Of Coffee</h1>
+    <button id="productBtn" class="rounded-full p-5 bg-amber-500 hover:bg-amber-600 text-white block mx-auto mt-8">Show Products</button>
+
+    <div id="productList" class="grid grid-cols-3 gap-6 mt-7 px-3 py-10 justify-items-center"></div>
+
+
+     <script type="module" src="/src/main.ts"></script>
+     <script type="module" src="/src/products.ts"></script>
 </body>
 </html>
