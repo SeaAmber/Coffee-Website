@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products Page</title>
     <link rel="stylesheet" href="/src/index.css">
 </head>
-<body>
+<body class="overflow-x-hidden  min-h-screen flex flex-col">
 
-    <header>
-    <nav class="text-right text-2xl py-7 font-semibold bg-amber-500">
-        <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4">
+      <header class="bg-amber-500 p-8 flex">
+    <button id="menubtn" class="text-5xl absolute top-2 left-3 font-bold  sm:hidden">
+      ☰
+    </button>  
+
+      <nav id="nav-menu" class="hidden px-8 py-7 text-2xl font-semibold bg-amber-500 sm:flex">
+        <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4 sm:absolute left-3 top-7">
         <a href="index.html" class="px-12 hover:bg-red-600">Home</a>
         <a href="products.html" class="px-12  hover:bg-red-600">Products</a>
         <a href="about.html" class="px-12  hover:bg-red-600">About</a>
         <a href="contact.html" class="px-12  hover:bg-red-600">Contact Us</a>
     </nav>
  </header>
-
+  <main class="flex-1 px-4 py-6">
     <h1 class="text-center font-semibold mt-5 text-3xl">Our Different Types Of Coffee</h1>
     <button id="productBtn" class="rounded-full p-5 bg-amber-500 hover:bg-amber-600 text-white block mx-auto mt-8">Show Products</button>
 
-    <div id="productList" class="grid grid-cols-3 gap-6 mt-7 px-3 py-10 justify-items-center"></div>
-
+    <div id="productList" class="grid grid-cols-2 gap-3 mt-9 lg:grid-cols-3 px-3 py-10 justify-items-center"></div>
+</main>
+   <footer class="bg-black text-white font-semibold  p-8 text-2xl text-center">@2026 All Rights Reserved</footer>
 
      <script type="module" src="/src/main.ts"></script>
      <script type="module" src="/src/products.ts"></script>

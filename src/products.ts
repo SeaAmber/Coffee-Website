@@ -1,8 +1,12 @@
 import { products } from "./data/products";
 
+
+
 //Dom Layer
 const productBtn = document.getElementById("productBtn");
 const list = document.getElementById("productList")!;
+ const menu = document.getElementById("menubtn") as HTMLElement;
+ const navigationMenu = document.getElementById("nav-menu") as HTMLElement;
 
 
 productBtn?.addEventListener("click", () => {
@@ -25,3 +29,16 @@ productBtn?.addEventListener("click", () => {
 })
 .join("");
 })
+
+
+menu.addEventListener("click", () => {
+ navigationMenu.classList.toggle("hidden");
+
+ if(navigationMenu.classList.contains("hidden")) {
+    menu.textContent = '☰';
+ }
+    else{
+        menu.textContent = '✖';
+    }
+ }
+)

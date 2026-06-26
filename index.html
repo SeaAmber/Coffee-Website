@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="/src/index.css">
 </head>
-<body>
+<body class="overflow-x-hidden">
 
-  <header>
-    <nav class="text-right text-2xl py-7 font-semibold bg-amber-500">
-        <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4">
+
+  <header class="bg-amber-500 p-8 flex">
+    
+   <button id="menubtn" class="text-5xl absolute top-2 left-3 font-bold  sm:hidden">
+      ☰
+    </button>
+    <nav id="nav-menu" class="hidden px-8 py-7 text-2xl font-semibold bg-amber-500 sm:flex">
+        <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4 sm:absolute left-3 top-7">
         <a href="index.html" class="px-12 hover:bg-red-600">Home</a>
         <a href="products.html" class="px-12  hover:bg-red-600">Products</a>
         <a href="about.html" class="px-12  hover:bg-red-600">About</a>
@@ -22,16 +27,17 @@
     <div class="bg-gray-50">
       <h1 class="font-semibold text-4xl text-center mt-3">Our Coffee Shop</h1>
       <p class="text-center mt-5 text-2xl">Explore Our different types of coffee</p>
-      <img src="src/assets/coffeeShop.jpg" class="w-300 h-300 mx-auto mt-9">
+      <img src="src/assets/coffeeShop.jpg" class="w-300 h-300 mx-auto mt-9 px-5">
        <button id="viewBtn" class="bg-amber-500 hover:bg-amber-700 text-white mt-8 p-4 text-1xl mx-auto block rounded-full">View Our Other Types Of Coffee</button>
         </div>
 
 
     <div class="bg-gray-60">
-      <h1 class="text-center mt-9 text-4xl  mb-5 font-bold">Featured Menu Items</h1>
+     <h1 class="w-full text-center mt-9 text-4xl  mb-5 font-bold">Featured Menu Items</h1> 
+
       <p class="text-3xl text-center font-semibold">Enjoy your Coffee</p>
       
-      <div class="flex justify-center gap-3 px-48 py-28">
+      <div class="w-full flex flex-col sm:flex-row px-4 py-10 justify-center gap-3">
       <img src="src/assets/latte.jpg" class="mx-auto w-80">
       <img src="src/assets/coldbrew.jpg" class="mx-auto w-100">
      <img src="src/assets/coffee.jpg" class="mx-auto w-80">

@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="/src/index.css">
 </head>
-<body>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
 
-<header>
-    <nav class="text-right text-2xl py-7 font-semibold bg-amber-500">
-        <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4">
-        <a href="index.html" class="px-12 hover:bg-red-600">Home</a>
-        <a href="products.html" class="px-12  hover:bg-red-600">Products</a>
-        <a href="about.html" class="px-12  hover:bg-red-600">About</a>
-        <a href="contact.html" class="px-12  hover:bg-red-600">Contact Us</a>
+    <header class="bg-amber-500 p-8 flex">
+    <button id="menubtn" class="text-5xl absolute top-2 left-3 font-bold  sm:hidden">
+      ☰
+
+    </button>
+    
+        <nav id="nav-menu" class="hidden px-4 py-7 text-2xl font-semibold bg-amber-500 sm:flex">
+        <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4 sm:absolute left-3 top-7">
+        <a href="index.html" class="px-12 w-full block hover:bg-red-600">Home</a>
+        <a href="products.html" class="px-12 w-full block hover:bg-red-600">Products</a>
+        <a href="about.html" class="px-12 w-full block hover:bg-red-600">About</a>
+        <a href="contact.html" class= "px-12 w-full  block hover:bg-red-600">Contact Us</a>
     </nav>
  </header>
+
+
+   <main class="flex-1 px-4 py-6">
 
     <h1 class="text-center text-5xl mt-5 mb-5 font-semibold">About Us</h1>
     <p class="text-center text-2xl mb-5 px-4">We are on a mission to bring comfort to people through our coffee</p>
@@ -29,7 +37,10 @@
      <p class="text-center text-2xl mb-3 px-4">Beyond our drinks, Brew Haven is a space designed for comfort. Soft lighting, natural textures, and the gentle hum of conversation create an atmosphere where you can unwind or focus. We support local bakers, artists, and creators, offering pastries made fresh each morning and showcasing rotating artwork from members of our community. Every corner of our shop reflects our love for Bangor and the people who make it special.</p>   
         
      <p class="text-center text-2xl mb-7 px-4">Whether you’re a daily regular or visiting for the first time, we’re grateful to share our passion with you. Brew Haven is more than a coffee shop — it’s a place to pause, breathe, and enjoy the simple pleasure of a well‑made cup.</p>  
-      <footer class="bg-black text-white p-8 font-semibold text-2xl text-center">@2026 All Rights Reserved</footer>
+    </main>
+
+     
+     <footer class="bg-black text-white p-8 font-semibold text-2xl text-center">@2026 All Rights Reserved</footer>
     
           <script type="module" src="/src/main.ts"></script>
           <script type="module" src="/src/about.ts"></script>

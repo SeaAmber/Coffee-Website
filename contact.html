@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="/src/index.css">
 </head>
-<body>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
+  <header class="bg-amber-500 p-8 flex">
+    <button id="menubtn" class="text-5xl absolute top-2 left-3 font-bold  sm:hidden">
+      ☰
+    </button>  
+    
 
-<header>
-    <nav class="text-right text-2xl py-7 font-semibold bg-amber-500">
-        <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4">
+    <nav id="nav-menu" class="hidden px-8 py-7 text-2xl font-semibold bg-amber-500 sm:flex">
+    <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4 sm:absolute left-3 top-7">
         <a href="index.html" class="px-12 hover:bg-red-600">Home</a>
         <a href="products.html" class="px-12  hover:bg-red-600">Products</a>
         <a href="about.html" class="px-12  hover:bg-red-600">About</a>
@@ -18,7 +22,7 @@
     </nav>
  </header>
 
-  <main>
+  <main class="flex-1 px-4 py-6">
     <div>
     <h1 class="text-5xl mt-5 text-center font-semibold">Contact Us</h1>
    <p class="text-center font-semibold px-2 mt-5 mb-5">

@@ -1,5 +1,3 @@
-const nameInput = document.getElementById("name") as HTMLInputElement;
-const nameError = document.getElementById("name-error") as HTMLInputElement;
 const submitButton = document.getElementById("submitBtn") as HTMLInputElement;
 const form = document.getElementById("contactForm") as HTMLFormElement;
 const firstName = document.getElementById("firstName") as HTMLInputElement;
@@ -9,6 +7,8 @@ const message = document.getElementById("message") as HTMLTextAreaElement;
 
 const successMessage = document.getElementById("successMsg") as HTMLInputElement;
 
+const menu = document.getElementById("menubtn") as HTMLElement;
+const navigationMenu = document.getElementById("nav-menu") as HTMLElement;
 
 submitButton.addEventListener("click", (e) => {
 
@@ -29,3 +29,15 @@ setTimeout(() =>successMessage.classList.add("hidden"),1000);
 })
 
 
+
+menu.addEventListener("click", () => {
+ navigationMenu.classList.toggle("hidden");
+
+ if(navigationMenu.classList.contains("hidden")) {
+    menu.textContent = '☰';
+ }
+    else{
+        menu.textContent = '✖';
+    }
+ }
+)
