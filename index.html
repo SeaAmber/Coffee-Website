@@ -4,54 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <meta name="description" content="This is the home page that shows some of our coffee drinks.">
     <link rel="stylesheet" href="/src/index.css">
 </head>
 <body class="overflow-x-hidden">
-
 
   <header class="bg-amber-500 p-8 flex">
     
    <button id="menubtn" class="text-5xl absolute top-2 left-3 font-bold  sm:hidden">
       ☰
     </button>
-    <nav id="nav-menu" class="hidden px-8 py-7 text-2xl font-semibold bg-amber-500 sm:flex">
+    <nav id="nav-menu" class="hidden mx-auto py-7 text-2xl font-semibold bg-amber-500 sm:flex">
         <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4 sm:absolute left-3 top-7">
-        <a href="index.html" class="px-12 hover:bg-red-600">Home</a>
-        <a href="products.html" class="px-12  hover:bg-red-600">Products</a>
+         <a href="index.html" class="px-12 hover:bg-red-600">Home</a>
+         <a href="products.html" class="px-12  hover:bg-red-600">Products</a>
         <a href="about.html" class="px-12  hover:bg-red-600">About</a>
-        <a href="contact.html" class="px-12  hover:bg-red-600">Contact Us</a>
-    </nav>
+       <a href="contact.html" class="px-12  hover:bg-red-600">Contact</a>
+      </nav>
  </header>
 
-
-    <div class="bg-gray-50">
+ <main>
+    <section class="bg-gray-50">
       <h1 class="font-semibold text-4xl text-center mt-3">Our Coffee Shop</h1>
       <p class="text-center mt-5 text-2xl">Explore Our different types of coffee</p>
-      <img src="src/assets/coffeeShop.jpg" class="w-300 h-300 mx-auto mt-9 px-5">
-       <button id="viewBtn" class="bg-amber-500 hover:bg-amber-700 text-white mt-8 p-4 text-1xl mx-auto block rounded-full">View Our Other Types Of Coffee</button>
-        </div>
+      <img src="src/assets/coffeeShop.jpg" alt="Coffee Shop" width="870" height="1107" class="mx-auto mt-9 px-5">
+       <button id="viewBtn" class="bg-amber-500 hover:bg-amber-700 text-black font-bold mt-8 p-4 text-1xl mx-auto block rounded-full">View Our Other Types Of Coffee</button>
+    </section>
 
 
-    <div class="bg-gray-60">
+    <section class="bg-gray-50">
      <h1 class="w-full text-center mt-9 text-4xl  mb-5 font-bold">Featured Menu Items</h1> 
 
       <p class="text-3xl text-center font-semibold">Enjoy your Coffee</p>
       
       <div class="w-full flex flex-col sm:flex-row px-4 py-10 justify-center gap-3">
-      <img src="src/assets/latte.jpg" class="mx-auto w-80">
-      <img src="src/assets/coldbrew.jpg" class="mx-auto w-100">
-     <img src="src/assets/coffee.jpg" class="mx-auto w-80">
+      <img src="src/assets/latte.jpg" alt="Latte" class="w-full h-auto object-contain mx-auto">
+      <img src="src/assets/coldbrew.jpg" alt="Cold Brew" class="w-full h-auto object-contain mx-auto">
       </div>
+    </section>
 
-   <div>
+   <section>
     <h1 class="text-3xl mt-6 m-b6 font-semibold text-center">A Little About Us</h1>
     <p class="text-2xl text-center mt-6 mb-12 px-15">Brew Haven is a cozy neighborhood coffee shop dedicated to fresh roasts, handcrafted drinks, and a welcoming atmosphere. We source quality beans, support local makers, and create a space where community and great coffee come together every day.</p>
-   </div>
+   </section>
 
 
 
-    </div>
-
+ </main>
  <footer class="bg-black text-white font-semibold  p-8 text-2xl text-center">@2026 All Rights Reserved</footer>
  
  <script type="module" src="/src/main.ts"></script>

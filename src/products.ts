@@ -3,13 +3,13 @@ import { products } from "./data/products";
 
 
 //Dom Layer
-const productBtn = document.getElementById("productBtn");
+const productBtn = document.getElementById("productBtn") as HTMLElement;
 const list = document.getElementById("productList")!;
  const menu = document.getElementById("menubtn") as HTMLElement;
  const navigationMenu = document.getElementById("nav-menu") as HTMLElement;
 
-
-productBtn?.addEventListener("click", () => {
+//Event Layer
+productBtn.addEventListener("click", () => {
     list.innerHTML = products
     .map(product => {
      return   `

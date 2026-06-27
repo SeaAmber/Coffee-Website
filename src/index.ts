@@ -1,6 +1,8 @@
 import { products } from "./data/products";
+ console.log(products);
 
-const viewButton = document.getElementById("viewBtn") as HTMLElement;
+
+ const viewButton = document.getElementById("viewBtn") as HTMLElement;
  const menu = document.getElementById("menubtn") as HTMLElement;
  const navigationMenu = document.getElementById("nav-menu") as HTMLElement;
 
