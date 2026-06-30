@@ -1,3 +1,5 @@
+import './nav'
+
 
 function formValidation(
   firstName: string,
@@ -39,8 +41,6 @@ const messageValue = document.getElementById("message") as HTMLTextAreaElement;
 
 const successMessage = document.getElementById("successMsg") as HTMLInputElement;
 
-const menu = document.getElementById("menubtn") as HTMLElement;
-const navigationMenu = document.getElementById("nav-menu") as HTMLElement;
 
 
 
@@ -74,14 +74,3 @@ setTimeout(() =>successMessage.classList.add("hidden"),1000);
 
 
 
-menu.addEventListener("click", () => {
- navigationMenu.classList.toggle("hidden");
-
- if(navigationMenu.classList.contains("hidden")) {
-    menu.textContent = '☰';
- }
-    else{
-        menu.textContent = '✖';
-    }
- }
-)

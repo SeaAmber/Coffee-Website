@@ -1,13 +1,11 @@
 import { products } from "./data/products";
-
+import './nav'
 
 
 //Dom Layer
 const productBtn = document.getElementById("productBtn") as HTMLElement;
-const list = document.getElementById("productList")!;
- const menu = document.getElementById("menubtn") as HTMLElement;
- const navigationMenu = document.getElementById("nav-menu") as HTMLElement;
-
+const list = document.getElementById("productList") as HTMLElement;
+ 
 //Event Layer
 productBtn.addEventListener("click", () => {
     list.innerHTML = products
@@ -31,14 +29,3 @@ productBtn.addEventListener("click", () => {
 })
 
 
-menu.addEventListener("click", () => {
- navigationMenu.classList.toggle("hidden");
-
- if(navigationMenu.classList.contains("hidden")) {
-    menu.textContent = '☰';
- }
-    else{
-        menu.textContent = '✖';
-    }
- }
-)
