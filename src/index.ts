@@ -8,6 +8,6 @@ import './nav'
  
 
 viewButton.addEventListener("click", () => {
- location.href = '/products'
+ location.href = 'products.html'
 })
 
