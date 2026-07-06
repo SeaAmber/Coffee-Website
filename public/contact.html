@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/src/index.css">
+</head>
+<body class="overflow-x-hidden min-h-screen flex flex-col">
+  <header class="bg-amber-500 p-8 flex">
+    <button id="menubtn" class="text-5xl absolute top-2 left-3 font-bold  sm:hidden">
+      ☰
+    </button>  
+    
+
+    <nav id="nav-menu" class="hidden  mx-auto py-7 text-2xl font-semibold bg-amber-500 sm:flex">
+    <img src="src/assets/cocoa.png" alt="Brew Haven Logo" class="h-16 px-4 sm:absolute left-3 top-7">
+        <a href="index.html" class="px-12 hover:bg-red-600">Home</a>
+        <a href="products.html" class="px-12  hover:bg-red-600">Products</a>
+        <a href="about.html" class="px-12  hover:bg-red-600">About</a>
+        <a href="contact.html" class="px-12  hover:bg-red-600">Contact</a>
+    </nav>
+ </header>
+
+  <main class="flex-1 px-4 py-6">
+    <div>
+    <h1 class="text-5xl mt-5 text-center font-semibold">Contact Us</h1>
+   <p class="text-center font-semibold px-2 mt-5 mb-5">
+   Have a question or want to reach out? Send a message and we'll get back to you within 24-48 hours
+   </p>
+  </div>
+
+
+     <form id="contactForm" class="text-center mt-6 bg-amber-100"> 
+
+          <div class="py-5"> 
+       <label for="firstName" class="text-2xl">First Name:</label>
+        <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        placeholder="Enter your first name"
+        class="px-2 py-2 border border-gray-500 rounded focus:border-black focus:outline-none"
+        required
+        />
+        <p class="firstName-error" id="error-message"></p>
+         </div>
+
+
+
+  <div class="py-5"> 
+            
+       <label for="lastName" class="text-2xl">Last Name:</label>
+        <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        placeholder="Enter your last name"
+        class="px-2 py-2 border border-gray-500 rounded focus:border-black focus:outline-none"
+        required
+        >
+        <p class="lastName-error" id="error-message"></p>
+        </div> 
+
+
+
+
+
+    <div class="py-5">    
+       <label for="email" class="text-2xl">Email:</label>
+        <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        class="px-2 py-2 border border-gray-500 rounded focus:border-black focus:outline-none"
+        required
+        />
+        <p class="email-error" id="error-message"></p>
+         </div> 
+
+
+
+
+     <div class="py-5">     
+       <label for="message" class="text-2xl">Message:</label>
+       <textarea id="message" class="w-full h-32 px-2 border border-gray-500 rounded focus:border-black focus:outline-none"></textarea>
+       <p class="message-error" id="error-message"></p>
+    </div> 
+
+     <button id="submitBtn" type="submit" class="text-white text-2xl bg-amber-600 hover:bg-amber-800 rounded-full p-5 mb-2">Send Message</button>
+
+    <p id="successMsg" class="hidden text-2xl font-semibold">Message sent successfully</p>
+     </form> 
+</main>
+
+     <footer class="bg-black text-white p-8 font-semibold text-2xl text-center">@2026 All Rights Reserved</footer>
+    
+     <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/contact.ts"></script>
+</body>
+</html>
