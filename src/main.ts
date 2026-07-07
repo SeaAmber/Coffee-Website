@@ -1,4 +1,3 @@
-
 const navLinks = document.querySelectorAll("nav a");
 const currentPage = window.location.pathname.split("/").pop();
 
