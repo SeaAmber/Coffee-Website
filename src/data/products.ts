@@ -75,7 +75,7 @@ export const products: Product[] = [
         id: 9,
         name: "hot chocolate",
         price: 5.00,
-        image: "/src/assets/hotchocolate.jpg"
+        image: "/assets/hotchocolate.jpg"
        }
 
 
