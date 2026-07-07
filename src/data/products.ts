@@ -12,14 +12,14 @@ export const products: Product[] = [
         id: 1,
         name: "latte",
         price: 4.99,
-        image: "/src/assets/latte.jpg"
+        image: "assets/latte.jpg"
        },
 
  {
         id: 2,
         name: "coldbrew",
         price: 5.00,
-        image: "/src/assets/coldbrew.jpg"
+        image: "assets/coldbrew.jpg"
        },
 
 
@@ -27,14 +27,14 @@ export const products: Product[] = [
         id: 3,
         name: "coffee",
         price: 3.99,
-        image: "/src/assets/coffee.jpg"
+        image: "assets/coffee.jpg"
        },
 
 {
         id: 4,
         name: "cappucino",
         price: 6.00,
-        image: "/src/assets/cappuccino.jpg"
+        image: "assets/cappuccino.jpg"
        },
 
 
@@ -43,7 +43,7 @@ export const products: Product[] = [
         id: 5,
         name: "toasted marshmallow drink",
         price: 6.00,
-        image: "/src/assets/toastedmarshmallow.jpg"
+        image: "assets/toastedmarshmallow.jpg"
        },
 
 
@@ -51,14 +51,14 @@ export const products: Product[] = [
         id: 6,
         name: "cortado",
         price: 7.00,
-        image: "/src/assets/cortado.jpg"
+        image: "assets/cortado.jpg"
        },
 
 {
         id: 7,
         name: "dark mocha velvet",
         price: 7.00,
-        image: "/src/assets/darkmochavelvet.jpg"
+        image: "assets/darkmochavelvet.jpg"
        },
 
 
@@ -67,7 +67,7 @@ export const products: Product[] = [
         id: 8,
         name: "white mocha velvet",
         price: 7.00,
-        image: "/src/assets/whitemochavelvet.jpg"
+        image: "assets/whitemochavelvet.jpg"
        },
 
 
@@ -75,7 +75,7 @@ export const products: Product[] = [
         id: 9,
         name: "hot chocolate",
         price: 5.00,
-        image: "/assets/hotchocolate.jpg"
+        image: "assets/hotchocolate.jpg"
        }
 
 
